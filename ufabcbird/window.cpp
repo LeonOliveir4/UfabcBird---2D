@@ -62,7 +62,7 @@ void Window::onPaint() {
   abcg::glClear(GL_COLOR_BUFFER_BIT);
   abcg::glViewport(0, 0, m_viewportSize.x, m_viewportSize.y);
   m_bg.paint();
-  m_bird.paint(State::Playing);
+  m_bird.paint(m_gameData);
   
 }
 

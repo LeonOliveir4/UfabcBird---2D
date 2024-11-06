@@ -174,8 +174,8 @@ void Bird::create(GLuint program, GameData const &gamedata){
 
 }
 
-void Bird::paint(State const &state) {
-    if (state != State::Playing)
+void Bird::paint(GameData const &gamedata) {
+    if (gamedata.m_state != State::Playing)
       return;
     
     abcg::glUseProgram(m_program);
